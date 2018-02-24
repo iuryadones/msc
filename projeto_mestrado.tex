@@ -1,0 +1,148 @@
+\documentclass[12pt,a4paper,oneside]{book}
+\usepackage[T1]{fontenc}
+\usepackage[active]{srcltx}
+\usepackage[all]{xy}
+\usepackage[autostyle]{csquotes}
+\usepackage[brazil]{babel}
+\usepackage[brazil]{varioref}
+\usepackage[hidelinks]{hyperref}
+\usepackage[latin1]{inputenc}
+\usepackage[rflt]{floatflt}
+\usepackage{alltt}
+\usepackage{amsfonts,amsthm,amsopn,amssymb,latexsym}
+\usepackage{amsmath}
+\usepackage{appendix}
+\usepackage{blindtext}
+\usepackage{caption}
+\usepackage{colortbl}
+\usepackage{dcolumn}
+\usepackage{epic}
+\usepackage{epsfig,longtable}
+\usepackage{epstopdf}
+\usepackage{graphicx}
+\usepackage{indentfirst}
+\usepackage{makeidx}
+\usepackage{microtype}
+\usepackage{multirow}
+\usepackage{pdfpages}
+\usepackage{pifont}
+\usepackage{ragged2e}
+\usepackage{setspace}
+\usepackage{subfig}
+\usepackage{textcomp}
+\usepackage{url}
+\usepackage{wrapfig}
+\usepackage{xcolor}
+\usepackage{xr}
+
+\usepackage[
+    bottom=2cm,
+    left=3cm,
+    right=2cm,
+    top=3cm,
+]{geometry}
+
+\usepackage[
+    backend=bibtex,
+    defernumbers=true,
+    encoding=latin1,
+    style=abnt,
+]{biblatex}
+\addbibresource{referencias/papers.bib}
+
+
+\begin{document}
+\input{prefacios/capa}
+\thispagestyle{empty}
+
+\frontmatter
+
+\tableofcontents
+\pagebreak
+
+\addcontentsline{toc}{chapter}{Indentifica\c{c}\~{a}o do plano}
+\chapter*{Indentifica\c{c}\~{a}o do plano}
+\renewcommand{\labelenumi}{\alph{enumi}}
+\begin{enumerate}
+    \item - Discente:
+    \item - Bolsista: Sim ( )  N\~{a}o ( ) Ag\^{e}ncia:
+    \item - N\'{i}vel:
+    \item - Entrada (ano/semestre):
+    \item - Orientador\(a\):
+    \item - Co-orientadores:
+    \item - Projeto de pesquisa do(a) orientador(a) ao qual est\'{a} vinculado o plano (projeto guarda-chuva):
+    \item - \'{A}rea de concentra\c{c}\~{a}o:
+    \item - Linha de pesquisa:
+\end{enumerate}
+
+\textcolor{red}{\\
+* Favor apagar todas as partes em vermelho do plano de trabalho.\\
+* O plano deve ter 6~8 p\'{a}ginas para mestrado e 8~10 p\'{a}ginas para doutorado, sendo contadas as folhas a partir da introdu\c{c}\~{a}o.\\
+* Espa\c{c}amento 1,5 entre linhas. Margens superior e esquerda 3,0cm, inferior e direta 2,0cm.\\
+* A partir da introdu\c{c}\~{a}o, imprimir em frente e verso.}
+\pagebreak
+
+\mainmatter
+
+\chapter{Introdu\c{c}\~{a}o}
+\textcolor{red}{(Deve constar obrigatoriamente revis\~{a}o de literatura, vincula\c{c}\~{a}o com a linha de pesquisa escolhida e o problema da pesquisa. Obs: exemplo da refer\^{e}ncia \autocite{einstein}, \cite[10]{einstein}, \citeauthor{einstein} e \textcite{einstein})}
+\pagebreak
+
+\chapter{Objetivos}
+\textcolor{red}{(deve conter verbos sempre no infinitivo)}
+\section{Geral}
+\section{Espec\'{i}fico}
+\pagebreak
+
+\chapter{Metodologia}
+\textcolor{red}{(Material e m\'{e}todos, descrever como ser\'{a} o processo de coleta e an\'{a}lise de dados, bem como teorias que embasam a an\'{a}lise)}
+\pagebreak
+
+\chapter{Or\c{c}amento}
+\textcolor{red}{(obrigatoriamente preencher financiadores, caso haja bolsa, ajuda financeira, etc.)}
+\pagebreak
+
+\chapter{Resultados Esperados}
+\begin{center}
+    \begin{tabular}{|l|c|}
+        \hline
+        \multicolumn{1}{|c|}{Categoria} & \multicolumn{1}{|c|}{N\'{u}mero esperado} \\ \hline
+        Artigo cient\'{i}fico &  \\ \hline
+        Participa\c{c}\~{a}o em congresso & \\ \hline
+        Patente ou equivalente & \\ \hline
+        Livro ou cap\'{i}tulo de livro & \\ \hline
+        Disserta\c{c}\~{a}o de Mestrado & \\ \hline
+        Tese de Doutorado & \\ \hline
+        Participa\c{c}\~{a}o em Editais & \\ \hline
+        Outras (especificar) & \\ \hline
+    \end{tabular}
+\end{center}
+\pagebreak
+
+\chapter{Cronograma do discente}
+\textcolor{red}{(discentes de mestrado – preencher at\'{e} o quarto semestre)}
+\begin{center}
+    \begin{tabular}{|l|c|c|c|c|c|c|c|c|c|}
+        \hline
+        \multicolumn{1}{|c|}{\multirow{2}{*}{Atividades}} & \multicolumn{8}{c|}{Semestres} \\ \cline{2-9}
+         & 1$º$ & 2$º$ & 3$º$ & 4$º$ & 5$º$ & 6$º$ & 7$º$ & 8$º$ \\ \hline
+        Cr\'{e}ditos de disciplinas & & & & & & & & \\ \hline
+        Cr\'{e}ditos de orienta\c{c}\~ao & & & & & & & & \\ \hline
+        Pesquisa Bibliogr\'{a}fica & & & & & & & & \\ \hline
+        Obten\c{c}\~ao de dados & & & & & & & & \\ \hline
+        An\'{a}lise de dados & & & & & & & & \\ \hline
+        Profici\^{e}ncias (ingl\^{e}s/espanhol) & & & & & & & & \\ \hline
+        Exame de qualifica\c{c}\~ao* & & & & & & & & \\ \hline
+        Revis\~{a}o e reda\c{c}\~ao da tese & & & & & & & & \\ \hline
+        Defesa da tese & & & & & & & & \\ \hline
+    \end{tabular}
+\end{center}
+* S\'{o} para doutorado
+\pagebreak
+
+\medskip
+\printbibliography[heading=bibintoc,title={Refer\^{e}ncias},type=article]
+\textcolor{red}{(De acordo com a ABNT)}
+
+\backmatter
+\end{document}
