@@ -1,4 +1,5 @@
 *-blx.bib
+*-eps-converted-to.pdf
 *.aux
 *.bbl
 *.bcf
@@ -7,4 +8,5 @@
 *.log
 *.out
 *.run.xml
+*.synctex.gz
 *.toc
