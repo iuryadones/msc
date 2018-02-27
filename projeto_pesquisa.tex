@@ -99,95 +99,33 @@
 %}}}
 %{{{ Introdução
 \chapter{Introdu\c{c}\~{a}o}
-\textcolor{red}{(Deve constar obrigatoriamente revis\~{a}o de literatura,
-vincula\c{c}\~{a}o com a linha de pesquisa escolhida e o problema da pesquisa.
-Obs: exemplo da refer\^{e}ncia:
+Neste per\'{i}odo a comunidade acad\^{e}mica v\^{e}m discutindo e produzindo
+trabalhos relacionados a redes neurais convolucionais profundas, tais como os de
+\autocite{JADERBERG2014} e \autocite{ANIL2015}, onde as mesmas det\'{e}m
+resultados pr\'{o}ximo ao dos seres humanos em rela\c{c}\~ao a
+classifica\c{c}\~ao de objetos nas imagens.
 
-\autocite{ANIL2015}
-\cite{ANIL2015}
-\citeauthor{ANIL2015}
-\textcite{ANIL2015}
+As redes neurais convolucionais profundas aplicadas a imagens, necessita passar
+por uma etapa de gera\c{c}\~{a}o de n\'{u}cleos extrator de caracteristicas em
+seu processo visto em \autocite{GOODFELLOW2013}, sendo pivor nos resultados de
+classifica\c{c}\~{a}o.
 
-\autocite{BREUEL2013}
-\cite{BREUEL2013}
-\citeauthor{BREUEL2013}
-\textcite{BREUEL2013}
+Ser\'{a} oportuno usarmos t\'{e}cnicas da Meta\wb-heur\'{i}stica de
+acordo com \autocite{MOHAMMAD2017} para otimiza\c{c}\~{a}o na aprendizagem
+profunda, nesta etapa que poderemos obter caracter\'{i}sticas de letras,
+n\'{u}meros ou objetos contidos numa imagem?
 
-\autocite{CHANDARANA2014}
-\cite{CHANDARANA2014}
-\citeauthor{CHANDARANA2014}
-\textcite{CHANDARANA2014}
-
-\autocite{ELAGOUNI2012}
-\cite{ELAGOUNI2012}
-\citeauthor{ELAGOUNI2012}
-\textcite{ELAGOUNI2012}
-
-\autocite{GUPTA2007}
-\cite{GUPTA2007}
-\citeauthor{GUPTA2007}
-\textcite{GUPTA2007}
-
-\autocite{MILYAEV2013}
-\cite{MILYAEV2013}
-\citeauthor{MILYAEV2013}
-\textcite{MILYAEV2013}
-
-\autocite{MOHAMMAD2017}
-\cite{MOHAMMAD2017}
-\citeauthor{MOHAMMAD2017}
-\textcite{MOHAMMAD2017}
-
-\autocite{SAHU2015}
-\cite{SAHU2015}
-\citeauthor{SAHU2015}
-\textcite{SAHU2015}
-
-\autocite{BLUCHE2016}
-\cite{BLUCHE2016}
-\citeauthor{BLUCHE2016}
-\textcite{BLUCHE2016}
-
-\autocite{CAMPOS2009}
-\cite{CAMPOS2009}
-\citeauthor{CAMPOS2009}
-\textcite{CAMPOS2009}
-
-\autocite{CHRISTY2017}
-\cite{CHRISTY2017}
-\citeauthor{CHRISTY2017}
-\textcite{CHRISTY2017}
-
-\autocite{GOODFELLOW2013}
-\cite{GOODFELLOW2013}
-\citeauthor{GOODFELLOW2013}
-\textcite{GOODFELLOW2013}
-
-\autocite{JADERBERG2014}
-\cite{JADERBERG2014}
-\citeauthor{JADERBERG2014}
-\textcite{JADERBERG2014}
-
-\autocite{MOHAMMAD2014}
-\cite{MOHAMMAD2014}
-\citeauthor{MOHAMMAD2014}
-\textcite{MOHAMMAD2014}
-
-\autocite{NEWELL2011}
-\cite{NEWELL2011}
-\citeauthor{NEWELL2011}
-\textcite{NEWELL2011}
-
-\autocite{SAWANT2016}
-\cite{SAWANT2016}
-\citeauthor{SAWANT2016}
-\textcite{SAWANT2016}
-
+Logo vemos uma oportunidade em contribuir com a comunidade, nesta
+etapa de pr\'{e}-processamento e extra\c{c}\~{a}o de caracter\'{i}sticas, o qual
+iremos explorar os m\'{e}todos separados, tais como reproduzidos em
+\autocite{GUPTA2007}, e implementaremos o m\'{e}todo de exames de part\'{i}culas
+adaptativos, visto em \autocite{ZHAN2009}.  Obtendo os resultados em imagens com
+caracteres, digitos, e escrita de n\'{u}meros, de bases de pesuisas em vis\~{a}o
+computacional \autocite{MNIST2010} e \autocite{CAMPOS2009}.
 \pagebreak
 %}}}
 %{{{ Objetivos
 \chapter{Objetivos}
-\textcolor{red}{(deve conter verbos sempre no infinitivo)}
 %{{{ Objetivo Geral
 \section{Geral}
 \'{E} investigar se a meta-heur\'{i}stica possui maior viabilidade para
@@ -195,26 +133,18 @@ solu\c{c}\~{a}o de um problema de otimiza\c{c}\~{a}o.
 %}}}
 %{{{ Objetivo Específico
 \section{Espec\'{i}fico}
-Usar t\'{e}cnicas de pr\'{e}\wb-processamento de imagens e aprendizagens de
-m\'{a}quinas em imagens de caracteres e d\'{i}gitos. No entanto, tais
-t\'{e}cnicas aplicadas tem uma gama de par\^{a}metros a serem otimizados,
-sabendo que o objetivo se caracteriza em buscar a melhor extra\c{c}\~{a}o de
-caracteristicas para que os algoritmos de classifica\c{c}\~{a}o esteja em seu
-melhor estado, entretanto os algoritmos de aprendizagem de m\'{a}quinas
-tamb\'{e}m tem par\^{a}metros que poder\'{a} serem otimizados h\'{a} s\'{o}s ou
-glutinando diferentes tecnicas de aprendizagem de maquinas, com isso guardaremos
-os pesos para cada resposta de m\'{a}quina na sua classifica\c{c}\~{a}o e iremos
-fazer combina\c{c}\~{o}es das redes neurais e tendo em m\~{a}os tais respostas
-para usarmos as tecnicas, tamb\'{e}m buscaremos otimizar a classifica\c{c}\~{a}o
-com tais abordagens.
+Reproduzir t\'{e}cnicas de pr\'{e}\wb-processamento e binariza\c{c}\~{a}o de
+imagens, utilizar algoritmos de aprendizagens de m\'{a}quinas nos vetores de
+caracteristicas das imagens de caracteres e d\'{i}gitos, no entanto
+j\'{a} processadas e binarizadas. Tais t\'{e}cnicas aplicadas
+t\^{e}m uma gama de par\^{a}metros a serem ajustados, sabendo que o objetivo se
+caracteriza em buscar a melhor extra\c{c}\~{a}o de caracteristicas para que os
+algoritmos de classifica\c{c}\~{o}es estejam em seus melhores estados.
 %}}}
 \pagebreak
 %}}}
 %{{{ Metodologia
 \chapter{Metodologia}
-\textcolor{red}{(Material e m\'{e}todos, descrever como ser\'{a} o processo de
-coleta e an\'{a}lise de dados, bem como teorias que embasam a an\'{a}lise)}
-
 Neste cap\'{i}tulo veremos os materiais que ser\~{a}o utilizados na pesquisa e a
 descri\c{c}\~{a}o da pesquisa em seu desenvolvimento acad\^{e}mico.
 %{{{ Materiais
@@ -243,31 +173,28 @@ Utlizaremos fontes de imagens p\'{u}plicas de caracteres e n\'{u}meros tais
 como:
 
 \begin{itemize}
-    \item MNIST \cite[MNIST]{} e descrimina\c{c}\~{a}o quantitativa
-    \item Chars74K \cite[Chars74K]{} e descrimina\c{c}\~{a}o
-        quantitativa
+    \item MNIST \autocite{MNIST2010}
+    \item Chars74K \autocite{CAMPOS2009}
 \end{itemize}
 %}}}
 %{{{ Descrição da Pesquisa
-\section{Descri\c{c}\~{a}o da Pesquisa}
+\section{Desenvolvimento da Pesquisa}
 Implementaremos m\'{e}todos de pr\'{e}\wb-processamento e binariza\c{c}\~{a}o de
-imagens tais estabelecidos em \cite{GUPTA2007}, com isso
-passaremos a ajustar os par\^{a}metros com os m\'{e}todos algoritmos
-gen\'{e}ticos \cite[GA]{} e enxames de part\'{i}culas
-\cite[PSO]{}. O resultado das combina\c{c}\~{o}es nos dar imagens
-processadas, no entanto guardaremos as imagens resultantes, pois poderemos
-utiliza\wb-las com outros algoritmos de pr\'{e}\wb-processamento, sendo assim
-teremos mais combina\c{c}\~{o}es do espa\c{c}o amostral de acordo com
-\cite[Pipeline-processamento-imagens]{}.
+imagens tais estabelecidos em \autocite{GUPTA2007} nas imagens coletadas, com
+isso passaremos a modificar os par\^{a}metros com o met\'{o}do de enxames de
+part\'{i}culas adaptativo reproduzido por \autocite{ZHAN2009}. O resultado das
+combina\c{c}\~{o}es nos dar imagens processadas, no entanto guardaremos as
+imagens resultantes, pois utilizaremos com outros algoritmos de
+pr\'{e}\wb-processamento, sendo assim teremos mais combina\c{c}\~{o}es do
+espa\c{c}o de busca de acordo com \autocite{KATKAR2015}.
 
-Utilizaremos alguns algoritmos descritores de imagens
-\cite[Descritores]{}, pois as respostas dos descritores nas imagens,
-ir\'{a} formar a nosso base de caracter\'{i}sticas, ent\~{a}o com a base montada
-com 1000 exemplos de cada imagens normalizada, consiguiremos utilizar
-m\'{e}todos Redes neurais \cite[Redes-neurais]{} tais como MLP, SVM e
-Redes Neurais Profundas \cite[Deep-learn]{}.
-
-Com as redes neurais implementadas teremos
+Utilizaremos algoritmos descritores de imagens reproduzidos por
+\autocite{SAWANT2016} e \autocite{NEWELL2011}, obtendo as respostas dos descritores,
+ir\'{a} formar a nossa base de caracter\'{i}sticas, no entanto teremos 1000
+exemplos de cada imagem pr\'{e}\wb-processada e binarizada, no qual obteremos as
+caracteriscas, logo consiguiremos utilizar m\'{e}todos de Redes neurais tais
+como \autocite{KATKAR2015} e usando as m\'{e}tricas de avalia\c{c}\~{o}es dos
+mesmos.
 %}}}
 \pagebreak
 %}}}
@@ -312,7 +239,20 @@ Com as redes neurais implementadas teremos
 %}}}
 %{{{ Referências Bibliográficas
 \medskip
-\printbibliography[heading=bibintoc,title={Refer\^{e}ncias},type=article]
+\printbibliography[
+    heading=bibnumbered,
+    title={Refer\^{e}ncias},
+]
+% \printbibliography[
+%     heading=subbibnumbered,
+%     title={Artigos},
+%     type=article,
+% ]
+% \printbibliography[
+%     heading=subbibnumbered,
+%     title={Confer\^{e}ncias/Eventos},
+%     type=inproceedings,
+% ]
 %}}}
 %{{{ Iniciar sem Números
 \backmatter
