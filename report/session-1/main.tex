@@ -1,0 +1,84 @@
+%{{{ Preamble
+\documentclass[12pt,a4paper,letterpaper]{article}
+%}}}
+%{{{ Packages
+%{{{ geometry
+\usepackage[
+    bottom=2cm,
+    left=3cm,
+    right=2cm,
+    top=3cm,
+]{geometry}
+%}}}
+%{{{ bibliography
+\usepackage[
+    backend=bibtex,
+    defernumbers=true,
+    encoding=latin1,
+    style=abnt,
+]{biblatex}
+\usepackage[autostyle]{csquotes}
+%}}}
+%{{{ type input font
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[brazil]{varioref}
+\usepackage[utf8]{inputenc}
+%}}}
+%{{{ type output font
+\usepackage{
+    amsfonts,
+    amsmath,
+    amsopn,
+    amssymb,
+    amsthm,
+    latexsym
+}
+\usepackage{indentfirst}
+%}}}
+%}}}
+%{{{ Add bib
+\addbibresource{bib/articles.bib}
+%}}}
+%{{{ Add New Command
+\newcommand\wb[1]{\discretionary{#1}{#1}{#1}}
+%}}}
+%{{{ Documento
+\begin{document}
+\section{Pesquisa por artigos de algoritmo de classificação}
+
+Foram feitas buscas de trabalhos relacionados a palavra\wb-chave
+``\textit{algoritmos de classificações}'', nas seguintes fontes Google Scholar e
+Periódico Capes, foram escolhidos artigos de dois anos mais recentes, logo de
+forma grosseira usamos o critério de escolha devidos aos seus títulos, onde
+foram selecionados e lidos resumos, no entanto selecionamos devido a nossa busca
+dois artigos relacionados com algoritmo de classificação.
+
+\section{Artigos Escolhidos pelo título}
+
+Primeiro artigo, foi buscado por palavra\wb-chave ``\textit{algorithm for
+classification dataset}'', filtrado por ano 2017 e encontramos um artigo com
+título ``\textit{Feature weighting and SVM parameters optimization based on
+genetic algorithms for classification problems}'' \autocite{PHAN2017}.
+
+Nosso segundo artigo, foi buscado por palavra\wb-chave ``\textit{algorithm for
+classification image}'', filtrado por ano 2016 e encontramos um artigo com
+título ``\textit{Fast image classification by boosting fuzzy classifiers}''
+\autocite{KORYTKOWSKI2016}.
+
+\section{Primeiro Artigo}
+\autocite{PHAN2017}
+
+\section{Segundo Artigo}
+\autocite{KORYTKOWSKI2016}
+
+\pagebreak
+%{{{ Referências Bibliográficas
+\medskip
+\printbibliography[
+    heading=bibintoc,
+    title={Referências Bibliográficas}
+]
+%}}}
+\end{document}
+%}}}
