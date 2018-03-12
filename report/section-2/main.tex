@@ -1,0 +1,70 @@
+%{{{ Preamble
+\documentclass[12pt,a4paper,letterpaper]{article}
+%}}}
+%{{{ Packages
+%{{{ geometry
+\usepackage[
+    bottom=2cm,
+    left=3cm,
+    right=2cm,
+    top=3cm,
+]{geometry}
+%}}}
+%{{{ bibliography
+\usepackage[
+    backend=bibtex,
+    defernumbers=true,
+    encoding=latin1,
+    style=abnt,
+]{biblatex}
+\usepackage[autostyle]{csquotes}
+%}}}
+%{{{ type input font
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[brazil]{varioref}
+\usepackage[utf8]{inputenc}
+%}}}
+%{{{ type output font
+\usepackage{
+    amsfonts,
+    amsmath,
+    amsopn,
+    amssymb,
+    amsthm,
+    latexsym
+}
+\usepackage{indentfirst}
+%}}}
+%}}}
+%{{{ Add bib
+\addbibresource{bib/articles.bib}
+%}}}
+%{{{ Add New Command
+\newcommand\wb[1]{\discretionary{#1}{#1}{#1}}
+%}}}
+%{{{ Documento
+\begin{document}
+
+\section{Identificação do problema no fluxo da classificação}
+Temos indícios de que podemos melhorar a classificação na escolha de feature
+para o pre-processamento da base, visto que com algoritmos genético e SVM,
+podemos classificar de forma competitiva, mas sabemos que o algoritmo está
+interagindo com os parâmetros do SVM. Também em mão uso de aceleradores ou
+impulsores na classificação usando técnica fuzzy e SVM.
+
+Podemos avaliar tais combinações de técnicas e analisar tais resultados, antes
+mesmo de testarmos a nossa hipótese, de que, só ajustando os detectores de
+características e fixarmos tais parâmetros do SVM melhorará os resultados de
+classificação abruptamente.
+
+\pagebreak
+%{{{ Referências Bibliográficas
+\medskip
+\printbibliography[
+    heading=bibintoc,
+    title={Referências Bibliográficas}
+]
+%}}}
+\end{document}
+%}}}
