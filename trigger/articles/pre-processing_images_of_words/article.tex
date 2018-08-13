@@ -20,9 +20,14 @@
 %	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
-\documentclass[fleqn,10pt]{SelfArx} % Document font size and equations flushed left
+\documentclass[fleqn,12pt]{SelfArx} % Document font size and equations flushed left
 
-\usepackage[english]{babel} % Specify a different language here - english by default
+% \usepackage[english]{babel} % Specify a different language here - english by default
+
+\usepackage[T1]{fontenc}
+\usepackage[brazil]{babel}
+\usepackage[brazil]{varioref}
+\usepackage[utf8]{inputenc}
 
 \usepackage{lipsum} % Required to insert dummy text. To be removed otherwise
 
@@ -45,30 +50,74 @@
 %----------------------------------------------------------------------------------------
 
 \usepackage{hyperref} % Required for hyperlinks
-\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=color2,citecolor=color1,linkcolor=color1,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
+
+\hypersetup{hidelinks,
+            colorlinks,
+            breaklinks=true,
+            urlcolor=color2,
+            citecolor=color1,
+            linkcolor=color1,
+            bookmarksopen=false,
+            pdftitle={Title},
+            pdfauthor={Author}
+            }
+
+\usepackage[autostyle]{csquotes}
+\usepackage[backend=biber]{biblatex}
+
+\addbibresource{sample.bib}
 
 %----------------------------------------------------------------------------------------
 %	ARTICLE INFORMATION
 %----------------------------------------------------------------------------------------
 
-\JournalInfo{Journal, Vol. XXI, No. 1, 1-5, 2013} % Journal information
-\Archive{Additional note} % Additional notes (e.g. copyright, DOI, review/research article)
+\JournalInfo{UFRPE, 13/08/2018}
+\Archive{Disciplina de computação evolutiva}
 
-\PaperTitle{Article Title} % Article title
+\PaperTitle{
+União de métodos de processamentos de imagens digitais, que encadeado em
+processo de reconhecimento dígitos escritos a mão livre
+} % Article title
 
-\Authors{John Smith\textsuperscript{1}*, James Smith\textsuperscript{2}} % Authors
-\affiliation{\textsuperscript{1}\textit{Department of Biology, University of Examples, London, United Kingdom}} % Author affiliation
-\affiliation{\textsuperscript{2}\textit{Department of Chemistry, University of Examples, London, United Kingdom}} % Author affiliation
-\affiliation{*\textbf{Corresponding author}: john@smith.com} % Corresponding author
+\Authors{Iury Adones Xavier dos Santos\textsuperscript{1}*,
+         Dr. Adenilton Jos\'{e} da Silva\textsuperscript{2},
+         Dr. P\'{e}ricles Barbosa Cunha de Miranda\textsuperscript{3},
+         Dr. Danilo Ricardo Barbosa de Araújo\textsuperscript{4},
+         } % Authors
 
-\Keywords{Keyword1 --- Keyword2 --- Keyword3} % Keywords - if you don't want any simply remove all the text between the curly brackets
-\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
+\affiliation{
+\textsuperscript{1}\textit{Programa de Pós-Graduação em Informatica Aplicada (PPGIA), Universidade Federal Rural de Pernambuco (UFRPE), Recife-PE, Brasil}
+} % Author affiliation
+
+\affiliation{*\textbf{Autor correspondente}: iuryadones@gmail.com} % Corresponding author
+
+\Keywords{
+Algoritmos genéticos --- Processamento encadeado --- Reconhecimento de dígitos 
+} % Keywords - if you don't want any simply remove all the text between the curly brackets
+
+\newcommand{\keywordname}{Palavras-chaves} % Defines the keywords heading name
 
 %----------------------------------------------------------------------------------------
 %	ABSTRACT
 %----------------------------------------------------------------------------------------
 
-\Abstract{\lipsum[1]~}
+\Abstract{
+Neste presente trabalho, têm experimentos voltados na área de processamento de
+imagens digitais e heurística voltada ao reconhecimento de números escritos, no
+entanto, aborda-se alguns passos antes mesmo de chegar-se ao reconhecimento dos
+dígitos. Nesses passos que nos revela um fluxo encadeado, são atualmente
+produzidos nas literaturas acadêmicas as seções do fluxo de processamento de
+imagens, que inicia desda aquisição da imagem bruta, limpeza de ruídos e
+binarização dos objetos, pode compor até mesmo com reconhecimento de objetos.
+Tais trechos da trajetória do encadeamento, necessita de métodos de otimização,
+pois melhoram os resultados, tanto na visualização e classificação. Nós
+construirmos experimentos, que testa algumas das possíveis combinações dos
+fluxos de encadeamento, estão contidas em um espaço de busca restrito, e nesta
+construção abordamos com métodos baseado em algoritmos genéticos, que nos
+informa quais as melhores combinações do fluxo encadeado, passadas por avaliação
+de minimização do quantitativo de erros na detecção dos dígitos, sem a
+necessidade de otimizar cada seção por vez.
+}
 
 %----------------------------------------------------------------------------------------
 
@@ -86,16 +135,19 @@
 %	ARTICLE CONTENTS
 %----------------------------------------------------------------------------------------
 
-\section*{Introduction} % The \section*{} command stops section numbering
+\medskip
 
-\addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
+\section*{Introdução} % The \section*{} command stops section numbering
 
-\lipsum[1-3] % Dummy text
- and some mathematics $\cos\pi=-1$ and $\alpha$ in the text\footnote{And some mathematics $\cos\pi=-1$ and $\alpha$ in the text.}.
+\addcontentsline{toc}{section}{Introdução} % Adds this section to the table of contents
+
+\lipsum[1] % Dummy text
+ and some mathematics $\cos\pi=-1$ and $\alpha$ in the text\footnote{And some
+ mathematics $\cos\pi=-1$ and $\alpha$ in the text.}.
 
 %------------------------------------------------
 
-\section{Methods}
+\section{Metodologia}
 
 \begin{figure*}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
 \includegraphics[width=\linewidth]{view}
@@ -203,9 +255,8 @@ So long and thanks for all the fish \cite{Figueredo:2009dg}.
 %	REFERENCE LIST
 %----------------------------------------------------------------------------------------
 \phantomsection
-\bibliographystyle{unsrt}
-\bibliography{sample}
 
+\printbibliography 
 %----------------------------------------------------------------------------------------
 
 \end{document}
