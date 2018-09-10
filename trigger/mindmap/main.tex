@@ -1,0 +1,97 @@
+\documentclass{article}
+\usepackage[a4paper]{geometry}
+
+\usepackage{tikz}
+
+\usetikzlibrary{mindmap,trees,shadows,decorations}
+
+\usepackage{verbatim}
+
+\begin{document}
+
+\pagestyle{empty}
+
+\begin{tikzpicture}
+  \path[mindmap,
+        align=flush center,
+        grow cyclic,
+        every node/.style=concept,
+        concept color=black,
+        text=white,
+        font=\fontsize{20pt}{20pt}\selectfont]
+
+    node {Pesquisa científica} [clockwise from=0]
+    child[concept color=orange!80!black] {
+      node(c1) {Classificação da pesquisa científica}
+      [clockwise from=90]
+      child { node[concept](c11) {Pesquisa Exploratória} }
+      child { node[concept](c12) {Pesquisa descritivas} }
+      child { node[concept](c13) {Pesquisa explicativas} }
+    }
+    child[concept color=red!80!black] {
+      node[concept] {Problema de pesquisa}(c2)
+    }
+\end{tikzpicture}
+
+
+\begin{tikzpicture}
+  \path[mindmap,
+        align=flush center,
+        grow cyclic,
+        every node/.style=concept,
+        concept color=orange!80!black,
+        text=white,
+        font=\fontsize{20pt}{20pt}\selectfont]
+    node {Pesquisa Exploratória} [clockwise from=0]
+    child[concept] { node(c1) {Pesquisa bibliográfica} }
+    child[concept] { node(c2) {Pesquisa documental} }
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \path[mindmap,
+        align=flush center,
+        grow cyclic,
+        every node/.style=concept,
+        concept color=orange!80!black,
+        text=white,
+        font=\fontsize{20pt}{20pt}\selectfont]
+
+    node {Pesquisa Descritivas} [clockwise from=0]
+    child[concept color=orange!80!black] {
+      node(c1) {}
+    }
+\end{tikzpicture}
+
+\begin{tikzpicture}
+  \path[mindmap,
+        align=flush center,
+        grow cyclic,
+        every node/.style=concept,
+        concept color=orange!80!black,
+        text=white,
+        font=\fontsize{20pt}{20pt}\selectfont]
+
+    node {Pesquisa explicativas} [clockwise from=0]
+    child[concept color=orange!80!black] {
+      node(c1) {Pesquisa experimental}
+    }
+\end{tikzpicture}
+
+
+\begin{tikzpicture}
+  \path[mindmap,
+        align=flush center,
+        grow cyclic,
+        every node/.style=concept,
+        concept color=red!80!black,
+        text=white,
+        font=\fontsize{20pt}{20pt}\selectfont]
+    node {Problema de pesquisa} [clockwise from=-120]
+    child[concept color=red!80!black] {
+      node(c1) {}
+      [clockwise from=0]
+      child { node[concept](c11) {} }
+    }
+\end{tikzpicture}
+
+\end{document}
